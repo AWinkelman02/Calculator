@@ -2,19 +2,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #b2b4c5;
 }
 
 .main{
     border-radius: 8px;
     width: 15vw;
     height: 46vh;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: #e4e4e4;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -10px 0px inset;
 }
 
 .screen{

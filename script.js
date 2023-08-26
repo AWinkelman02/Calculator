@@ -42,7 +42,7 @@ function attachOperator(value){
 
 function clear(){
     calcScreenEquation.textContent = '';
-    calcScreenAnswer.textContent = '0';
+    calcScreenAnswer.textContent = '';
     numberOne = '';
     numberTwo = '';
     operator = null;
@@ -59,6 +59,7 @@ function equate(){
         alert('Error: Divide By 0');
         return
     }
+    if(operator === null) return
     numberTwo = calcScreenAnswer.textContent;
     calcScreenAnswer.textContent = roundAnswer(operate(numberOne, numberTwo, operator));
     calcScreenEquation.textContent = `${numberOne} ${operator} ${numberTwo} =`
